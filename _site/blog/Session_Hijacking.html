@@ -14,18 +14,18 @@
     <!-- Social: Twitter -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@DevFest">
-    <meta name="twitter:title" content="Test Blog">
+    <meta name="twitter:title" content="Session Hijacking">
     <meta name="twitter:description" content="TR7 is a cybersecurity company located in Ankara">
     <meta name="twitter:image:src" content="http://localhost:4000/img/seo/logo2.png">
     <!-- Social: Facebook / Open Graph -->
-    <meta property="og:title" content="Test Blog" /> 
+    <meta property="og:title" content="Session Hijacking" /> 
     <meta property="og:site_name" content="TR7" /> 
     <meta property="og:type" content="website" /> 
     <meta property="og:url" content="http://localhost:4000" />
     <meta property="og:image" content="http://localhost:4000/img/seo/logo2.png" />
     <meta property="og:description" content="TR7 is a cybersecurity company located in Ankara" /> 
     
-    <title>Test Blog &bull; TR7</title>
+    <title>Session Hijacking &bull; TR7</title>
     <link rel="shortcut icon" href="/img/favicons/favicon.ico">
     <link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-touch-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-touch-icon-144x144.png">
@@ -138,7 +138,7 @@
 	<div class="content-wrapper">
 	    <div class="jumbotron text-left">
 	        <div class="animated hiding" data-animation="fadeInLeft" data-delay="500">
-	            <h1>Test Blog</h1>
+	            <h1>Session Hijacking</h1>
 	        </div>
 	    </div>
     </div>
@@ -161,21 +161,21 @@
                             <ul class="social-links">
                              
                                 <li>
-                                    <a href="#" onclick="window.open('https://plus.google.com/share?url=http://localhost:4000/blog/test-blog', 'newwindow', 'width=600, height=500'); return false;">
+                                    <a href="#" onclick="window.open('https://plus.google.com/share?url=http://localhost:4000/blog/Session_Hijacking', 'newwindow', 'width=600, height=500'); return false;">
                                         <svg class="icon icon-google-plus" viewBox="0 0 30 32">
                                             <use xlink:href="/img/sprites/sprites.svg#icon-google-plus"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" onclick="window.open('https://twitter.com/home?status=http://localhost:4000/blog/test-blog', 'newwindow', 'width=600, height=250'); return false;">
+                                    <a href="#" onclick="window.open('https://twitter.com/home?status=http://localhost:4000/blog/Session_Hijacking', 'newwindow', 'width=600, height=250'); return false;">
                                         <svg class="icon icon-twitter" viewBox="0 0 30 32">
                                             <use xlink:href="/img/sprites/sprites.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/blog/test-blog', 'newwindow', 'width=600, height=500'); return false;">
+                                    <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/blog/Session_Hijacking', 'newwindow', 'width=600, height=500'); return false;">
                                         <svg class="icon icon-facebook" viewBox="0 0 30 32">
                                             <use xlink:href="/img/sprites/sprites.svg#icon-facebook"></use>
                                         </svg>
@@ -186,18 +186,71 @@
                     </div>
                     
                     
-                    <div class="post-body"><p>Buraya blog postunun yazısı eklenir. Markdown stilleri kullanılarak yazı kişiselleştirilebilir.</p>
+                    <div class="post-body"><h4 id="session-hijacking"><strong>Session Hijacking</strong></h4>
+
+<ul>
+  <li><strong>Session Hijacking saldırısı nedir?</strong></li>
+</ul>
+
+<p>Session Hijacking (oturum ele geçirme), bir kullanıcı oturumunun bir saldırgan tarafından ele geçirildiği bir saldırı türüdür. Bir oturum, örneğin bir uygulama hizmetine oturum açıldığında başlar ve oturum kapatıldığında sona erer. Saldırganın oturum çereziniz hakkında bilgi sahibi olma durumuna göre, saldırı, aynı zamanda çerez kaçırma veya çerez yan saldırısı olarak da adlandırılır. Bazen herhangi bir bilgisayar oturumu ele geçirilmesine rağmen, Session Hijacking en yaygın olarak tarayıcı oturumları ve web uygulamaları için geçerlidir.</p>
+
+<ul>
+  <li><strong>Session Hijacking Saldırısı Nasıl Çalışır?</strong></li>
+</ul>
+
+<p>Session Hijacking, bir saldırgan, çoğu web sitesinde bir oturumu sürdürmek için kullanılan HTTP çerezlerini çalarak tehlikeye atılmış bir etkin oturumdan yararlanmasıyla gerçekleşir. Başka bir yol ise saldırganın belirli bir kullanıcının kimlik bilgilerini kullandığından, uzak bir web sunucusundaki bilgilere yetkisiz erişim elde etmek için etkin bir oturumun tahmin etmesidir. Oturum belirteci veya HTTP başlığının güvenliği manipıle edilebilir ve bunlar oturum koklama (Session Sniffing) ve siteler arası komut dosyası çalıştırma (XSS) saldırılarını içerir.</p>
+
+<ul>
+  <li><strong>Session Hijacking Saldırısı Nasıl Anlaşılır?</strong></li>
+</ul>
+
+<p>Saldırgan sistemdeki varlığına dikkat çekmedikçe, oturum kaçırmanın çoğu zaman fark edilmesi zordur. Kullanıcı, bir saldırı sırasında birkaç belirti fark edebilir. Örneğin, istemci uygulama oturumu yani Telnet yanıt vermiyor veya donuyor. Başka bir belirti ise bilgisayarı yavaşlatan kısa süreli bir ağ etkinliğidir.</p>
+
+<p>Diğer bir yaygın belirti, istemci uygulamasının bir süre askıda kalmasıdır, çünkü sunucuya veri gönderen saldırganla rekabet etme durumu vardır. Bu, programın kafasının karışmasına ve 4. Katmandan bir yanıt beklemesine neden olur. Bununla birlikte, normal ve hatta ileri düzey bilgisayar kullanıcıları bu belirtileri nadiren rapor ederler çünkü sorunlar uygulamaların çökmesi, meşgul sunucular veya ağır yük bırakan bağlantılar altındaki bir ağ gibi diğer yaygın sorunlara çok benzer</p>
+
+<ul>
+  <li><strong>Nasıl Korunur?</strong></li>
+</ul>
+
+<p>DNS tünellemeye karşı koruma, bu girişimde bulunulan veri hırsızlığını algılayabilen ve engelleyebilen gelişmiş bir ağ tehdidi önleme sistemini ve böyle bir sistemin ağ trafiğinin denetlemesi ve kötü amaçlı ataklara yönelik trafiğin ve DNS trafiğine gömülebilecek kötü amaçlı içeriğin tanımlanmasını gerektirir.</p>
+
+<ul>
+  <li><strong>Session Hijacking atak tiplerinden bazıları;</strong></li>
+</ul>
+
+<p>İki ana Session Hijacking türü vardır. Bunlar, Uygulama Katmanı Korsanlığı ve Taşıma Katmanı Korsanlığıdır.  Uygulama katmanı ele geçirmede, bir saldırgan, bir oturumu ele geçirmek için gereken oturum kimliğini çalar veya başarıyla tahmin eder. Bu tür oturum kaçırma, esas olarak HTTP kullanan oturumlarda ortaya çıkar. İki Uygulama Katmanı Saldırısı örneği, Man in the Middle ve bir proxy kullanan saldırıları içerir. Öte yandan, proxy saldırıları, bir saldırgan, ağ trafiğinin kendi kurduğu bir proxy üzerinden geçmesine neden olarak işlem sırasında oturum kimliğini yakaladığında meydana gelir. Taşıma Katmanı ele geçirme, TCP oturumlarında meydana gelir ve saldırganın istemci ile sunucu arasındaki iletişim kanalını veri alışverişi yapılamayacak şekilde kesintiye uğratır. Böylece korsan istemciye ve sunucuya meşru görünen hileli veri paketleri gönderebilir yani esasen oturumu devralabilir. IP spoofing, sayesinde, korsan, ağdaki bilgisayarlarla iletişim kurabilir. Blind Hijacking, bir saldırganın bir oturum sırasında iletişimi kesip kendi kötü amaçlı verilerini ya da komutlarını gönderdiği bir saldırıdır.</p>
+
+<ul>
+  <li>
+    <p><strong>Session Hijacking Saldırılarından Korunmak</strong></p>
+  </li>
+  <li>
+    <p>Tüm oturum trafiğinin SSL / TLS şifrelemesini sağlamak için HTTPS kullanmak. Bu, korsan kullanıcının trafiğini izliyor olsa bile düz metin oturum kimliğine müdahale edememesini sağlar. Tüm bağlantıların şifrelenmesini garanti etmek için HSTS’i (HTTP Katı Taşıma Güvenliği) kullanmak daha fazla güvenlik sağlar.</p>
+  </li>
+  <li>
+    <p>İstemci tarafı komut dosyalarından tanımlama bilgilerine erişimi önlemek HttpOnlyiçin Set-CookieHTTP başlığını kullanarak özniteliği ayarlayın. Bu, XSS’yi ve tarayıcıya JavaScript enjekte etmeye dayanan diğer saldırıları önler. Ek güvenlik için Secureve SameSitedirektiflerinin belirtilmesi de önerilir.</p>
+  </li>
+  <li>
+    <p>Web sunucuları, uzun ve rastgele oturum tanımlama bilgileri oluşturabilir, bu da rakip bir tanımlama bilgisinin ne olabileceğini tahmin etme şansını azaltır.</p>
+  </li>
+  <li>
+    <p>Oturum kimliğine yetkisiz erişimi engelleyen kullanıcının tarayıcısı ile web sunucusu arasında uçtan uca şifreleme yapmak. VPN’ler, kişisel VPN çözüm araçlarını kullanarak yalnızca web sunucusuna gelen trafiği değil, her şeyi şifrelemek için de kullanılabilir.</p>
+  </li>
+  <li>
+    <p>Bir oturum sona erdiğinde otomatik bir oturum kapatma olmalıdır ve ayrıca, kullanıcının farklı bir oturum kimliği kullanarak yeniden kimlik doğrulaması yapması istenmelidir.</p>
+  </li>
+</ul>
 </div>
 
                     <div id="page-navigation" class="page-navigation">
                         <div class="next col-xs-6">
                             
-                                <a href="/blog/Brute_force" title="Brute Force">&laquo; Brute Force</a>
+                                <a href="/blog/Spoofing" title="Spoofing Saldırısı">&laquo; Spoofing Sal...</a>
                             
                         </div>
                         <div class="previous col-xs-6 text-right">
                             
-                                <a href="/blog/call-for-papers2" title="selam">selam &raquo;</a>
+                                <a href="/blog/Ping_Of_Death" title="Ping Of Death Atağı">Ping Of Deat... &raquo;</a>
                             
                         </div>
                     </div>

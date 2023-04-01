@@ -14,18 +14,18 @@
     <!-- Social: Twitter -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@DevFest">
-    <meta name="twitter:title" content="Test Blog">
+    <meta name="twitter:title" content="Parameter Tampering Atağı">
     <meta name="twitter:description" content="TR7 is a cybersecurity company located in Ankara">
     <meta name="twitter:image:src" content="http://localhost:4000/img/seo/logo2.png">
     <!-- Social: Facebook / Open Graph -->
-    <meta property="og:title" content="Test Blog" /> 
+    <meta property="og:title" content="Parameter Tampering Atağı" /> 
     <meta property="og:site_name" content="TR7" /> 
     <meta property="og:type" content="website" /> 
     <meta property="og:url" content="http://localhost:4000" />
     <meta property="og:image" content="http://localhost:4000/img/seo/logo2.png" />
     <meta property="og:description" content="TR7 is a cybersecurity company located in Ankara" /> 
     
-    <title>Test Blog &bull; TR7</title>
+    <title>Parameter Tampering Atağı &bull; TR7</title>
     <link rel="shortcut icon" href="/img/favicons/favicon.ico">
     <link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-touch-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-touch-icon-144x144.png">
@@ -138,7 +138,7 @@
 	<div class="content-wrapper">
 	    <div class="jumbotron text-left">
 	        <div class="animated hiding" data-animation="fadeInLeft" data-delay="500">
-	            <h1>Test Blog</h1>
+	            <h1>Parameter Tampering Atağı</h1>
 	        </div>
 	    </div>
     </div>
@@ -161,21 +161,21 @@
                             <ul class="social-links">
                              
                                 <li>
-                                    <a href="#" onclick="window.open('https://plus.google.com/share?url=http://localhost:4000/blog/test-blog', 'newwindow', 'width=600, height=500'); return false;">
+                                    <a href="#" onclick="window.open('https://plus.google.com/share?url=http://localhost:4000/blog/Parameter_Tampering_Attack', 'newwindow', 'width=600, height=500'); return false;">
                                         <svg class="icon icon-google-plus" viewBox="0 0 30 32">
                                             <use xlink:href="/img/sprites/sprites.svg#icon-google-plus"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" onclick="window.open('https://twitter.com/home?status=http://localhost:4000/blog/test-blog', 'newwindow', 'width=600, height=250'); return false;">
+                                    <a href="#" onclick="window.open('https://twitter.com/home?status=http://localhost:4000/blog/Parameter_Tampering_Attack', 'newwindow', 'width=600, height=250'); return false;">
                                         <svg class="icon icon-twitter" viewBox="0 0 30 32">
                                             <use xlink:href="/img/sprites/sprites.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/blog/test-blog', 'newwindow', 'width=600, height=500'); return false;">
+                                    <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/blog/Parameter_Tampering_Attack', 'newwindow', 'width=600, height=500'); return false;">
                                         <svg class="icon icon-facebook" viewBox="0 0 30 32">
                                             <use xlink:href="/img/sprites/sprites.svg#icon-facebook"></use>
                                         </svg>
@@ -186,18 +186,64 @@
                     </div>
                     
                     
-                    <div class="post-body"><p>Buraya blog postunun yazısı eklenir. Markdown stilleri kullanılarak yazı kişiselleştirilebilir.</p>
+                    <div class="post-body"><h4 id="parameter-tampering-atağı"><strong>Parameter Tampering Atağı</strong></h4>
+
+<ul>
+  <li><strong>Parameter Tampering Atağı Nedir?</strong></li>
+</ul>
+
+<p>Parametreler, URL sorgu dizeleri, form alanları ve çerezler kullanılarak geçirilir. Parametre kurcalama web tabanlı bir saldırı şeklidir, bir kullanıcı tarafından girilen URL veya Web sayfası form alanı verilerindeki belirli parametrelerin, saldırgan tarafından kullanıcının yetkisi olmadan değiştirilir. Bu, tarayıcıyı kullanıcının amaçladığından farklı bir bağlantıya, sayfaya veya siteye yönlendirir.</p>
+
+<ul>
+  <li><strong>Parameter Tampering Atağı Nasıl Çalışır?</strong></li>
+</ul>
+
+<p>Parametre kurcalamanın amacı form alanlarındaki parametreleri değiştirmektir. Kullanıcı bir HTML sayfasında seçim yaptığında, bunlar genellikle form alanı değerleri olarak depolanır ve HTTP isteği olarak Web uygulamasına gönderilir. Bu değerler, birleşik giriş kutusu, onay kutusu, radyo düğmesi, vb., Serbest metin veya gizli kullanılarak önceden seçilebilir. Bu değerlerin tümü bir saldırgan tarafından değiştirilebilir. Çoğu kez bu, sayfayı kaydetmek, HTML’i düzenlemek ve Web tarayıcısında sayfayı yeniden yüklemek kadar basittir.</p>
+
+<p>Örneğin gizli alanlar, normalde web uygulamasına durum bilgisi sağlamak için kullanılan ve son kullanıcı tarafından görünmeyen parametrelerdir. Saldırganlar gizli alan değerini isteği doğrultusunda değiştirebilir.</p>
+
+<p>Saldırgan, HTML formları sonuçlarını GET veya POST yöntemlerinden birini kullanarak gönderir. Yöntem GET, tüm form parametreleri ve bunların değerleri, kullanıcının gördüğü bir sonraki URL’nin sorgu dizesinde görünecektir. Böylece saldırgan bu sorgu dizesini değiştirebilir.</p>
+
+<p>Parametre kurcalama basit ancak oldukça etkili olarak kabul edilir. Bu atak tipi veri ifşasıyla sonuçlanan çeşitli şekillerde gerçekleştirilebilir.</p>
+
+<ul>
+  <li><strong>Parameter Tampering atak tiplerinden bazıları;</strong></li>
+</ul>
+
+<p>Parametre kurcalama basit ancak oldukça etkili olarak kabul edilir. Bu atak tipi veri ifşasıyla sonuçlanan çeşitli şekillerde gerçekleştirilebilir.</p>
+
+<ul>
+  <li>
+    <p>Cookie : Cookie’ler, istemci tarafından değiştirilebilmekte ve URL istekleriyle sunucuya gönderilebilmektedir. Bu nedenle, saldırgan, cookie içeriğini değiştirmek için bundan yararlanabilir.</p>
+  </li>
+  <li>
+    <p>Form alanları : Form alanı kurcalanması, bir saldırgan web sunucusuna gönderilen verileri kurallara aykırı bir şekilde değiştirerek bir formun davranışını değiştirmeye çalıştığında gerçekleşir.</p>
+  </li>
+  <li>
+    <p>HTTP başlıkları : HTTP istek başlığında bulunan yönlendirme başlığı, isteğin kaynaklandığı web sayfasının URL’sini içerir. Fakat saldırganlar, referans başlığını orijinal bir siteden gelmiş gibi değiştirebilir. HTTP yanıtları oluşturma yeteneği, kullanıcılar arası kurcalama, web ve tarayıcı önbelleği zehirlenmesi, siteler arası komut dosyası oluşturma gibi ortaya çıkan çeşitli saldırılara izin verir.</p>
+  </li>
+  <li>
+    <p>URL Manipülasyonu : URL, parametreler aracılığıyla hassas bilgiler ilettiğinde, bilgisayar korsanı bu sorgu dizesini değiştirebilir ve böylelikle kötü amaçlı eylemler gerçekleştirebilir.</p>
+  </li>
+  <li>
+    <p><strong>Parameter Tampering Saldırılarından Korunmak</strong></p>
+  </li>
+</ul>
+
+<p>Parametre kurcalaması, kullanıcı hakkında kişisel veya ticari bilgileri gizlice elde etmek için suçlular ve kimlik hırsızları tarafından kullanılabilir. Parametre tahrifinin önlenmesine yönelik önlemler, işlemin yürütülmesi için parametrenin gerçekten gerekli olup olmadığına bakılmaksızın, minimum ve maksimum izin verilen uzunluk, izin verilen sayısal aralık, izin verilen karakter dizileri ve kalıplarla ilgili standartlara uyduklarından emin olmak için tüm parametrelerin doğrulanmasını içerir.</p>
+
+<p>Beyaz listeye alma biçimi, kara listeye almaktan daha etkilidir. Bir web uygulaması güvenlik duvarı , kullanımdaki site için doğru şekilde yapılandırılmış olması koşuluyla, parametrelerin değiştirilmesine karşı bir miktar koruma sağlayabilir. Ayrıca, parametre kurcalamasını önlemek için oturum çerezlerini şifrelemek de koruma sağlamaktadır. Genel olarak, bir bilgisayarın veya ağın parametre kurcalamaya karşı savunmasızlığı, katı bir uygulama güvenliği rutini uygulanarak ve güncel tutulmasını sağlanarak en aza indirilebilir.</p>
 </div>
 
                     <div id="page-navigation" class="page-navigation">
                         <div class="next col-xs-6">
                             
-                                <a href="/blog/Brute_force" title="Brute Force">&laquo; Brute Force</a>
+                                <a href="/blog/Phising" title="Phishing Atağı">&laquo; Phishing Atağı</a>
                             
                         </div>
                         <div class="previous col-xs-6 text-right">
                             
-                                <a href="/blog/call-for-papers2" title="selam">selam &raquo;</a>
+                                <a href="/blog/ManInTheMiddle" title="Man In The Middle">Man In The M... &raquo;</a>
                             
                         </div>
                     </div>

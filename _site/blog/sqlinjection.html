@@ -14,18 +14,18 @@
     <!-- Social: Twitter -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@DevFest">
-    <meta name="twitter:title" content="Test Blog">
+    <meta name="twitter:title" content="SQL Injection Saldırısı">
     <meta name="twitter:description" content="TR7 is a cybersecurity company located in Ankara">
     <meta name="twitter:image:src" content="http://localhost:4000/img/seo/logo2.png">
     <!-- Social: Facebook / Open Graph -->
-    <meta property="og:title" content="Test Blog" /> 
+    <meta property="og:title" content="SQL Injection Saldırısı" /> 
     <meta property="og:site_name" content="TR7" /> 
     <meta property="og:type" content="website" /> 
     <meta property="og:url" content="http://localhost:4000" />
     <meta property="og:image" content="http://localhost:4000/img/seo/logo2.png" />
     <meta property="og:description" content="TR7 is a cybersecurity company located in Ankara" /> 
     
-    <title>Test Blog &bull; TR7</title>
+    <title>SQL Injection Saldırısı &bull; TR7</title>
     <link rel="shortcut icon" href="/img/favicons/favicon.ico">
     <link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-touch-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-touch-icon-144x144.png">
@@ -138,7 +138,7 @@
 	<div class="content-wrapper">
 	    <div class="jumbotron text-left">
 	        <div class="animated hiding" data-animation="fadeInLeft" data-delay="500">
-	            <h1>Test Blog</h1>
+	            <h1>SQL Injection Saldırısı</h1>
 	        </div>
 	    </div>
     </div>
@@ -161,21 +161,21 @@
                             <ul class="social-links">
                              
                                 <li>
-                                    <a href="#" onclick="window.open('https://plus.google.com/share?url=http://localhost:4000/blog/test-blog', 'newwindow', 'width=600, height=500'); return false;">
+                                    <a href="#" onclick="window.open('https://plus.google.com/share?url=http://localhost:4000/blog/sqlinjection', 'newwindow', 'width=600, height=500'); return false;">
                                         <svg class="icon icon-google-plus" viewBox="0 0 30 32">
                                             <use xlink:href="/img/sprites/sprites.svg#icon-google-plus"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" onclick="window.open('https://twitter.com/home?status=http://localhost:4000/blog/test-blog', 'newwindow', 'width=600, height=250'); return false;">
+                                    <a href="#" onclick="window.open('https://twitter.com/home?status=http://localhost:4000/blog/sqlinjection', 'newwindow', 'width=600, height=250'); return false;">
                                         <svg class="icon icon-twitter" viewBox="0 0 30 32">
                                             <use xlink:href="/img/sprites/sprites.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/blog/test-blog', 'newwindow', 'width=600, height=500'); return false;">
+                                    <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/blog/sqlinjection', 'newwindow', 'width=600, height=500'); return false;">
                                         <svg class="icon icon-facebook" viewBox="0 0 30 32">
                                             <use xlink:href="/img/sprites/sprites.svg#icon-facebook"></use>
                                         </svg>
@@ -186,18 +186,62 @@
                     </div>
                     
                     
-                    <div class="post-body"><p>Buraya blog postunun yazısı eklenir. Markdown stilleri kullanılarak yazı kişiselleştirilebilir.</p>
+                    <div class="post-body"><h4 id="sql-injection-saldırısı"><strong>SQL Injection Saldırısı</strong></h4>
+
+<ul>
+  <li><strong>SQL Injection Atağı Nedir?</strong></li>
+</ul>
+
+<p>SQL enjeksiyonu, bir saldırganın bir uygulamanın veritabanına yaptığı sorgulara müdahale etmesine olanak tanıyan bir web güvenlik açığıdır. Bu açık saldırganın normalde alamadığı verileri görüntülemesine izin verir. Bu, diğer kullanıcılara ait verileri veya uygulamanın kendisinin erişebildiği diğer verileri içerebilir. Çoğu durumda, bir saldırgan bu verileri değiştirebilir veya silebilir, bu da uygulamanın içeriğinde veya davranışında kalıcı değişikliklere neden olabilir.</p>
+
+<ul>
+  <li><strong>SQL Injection Atağı Nasıl Çalışır?</strong></li>
+</ul>
+
+<p>SQL, ilişkisel veritabanlarında depolanan verileri yönetmek için tasarlanmış bir sorgu dilidir ve verilere erişmek, değiştirmek ve silmek için kullanabilirsiniz. Birçok web uygulaması ve web sitesi, tüm verilerini SQL veritabanlarında depolar. Ayrıca bazı durumlarda, işletim sistemi komutlarını çalıştırmak için SQL komutlarını da kullanabilirsiniz. Bu yüzden sql injection saldırısı çok kötü sonuçlar doğurabilir.</p>
+
+<p>SQL injection saldırısı yapmak için, saldırganın önce web sayfası veya web uygulamasında savunmasız kullanıcı bilgilerini(girdilerini) bulması gerekir. SQL injection güvenlik açığı olan bir web sayfası veya web uygulaması, bu tür kullanıcı girişini doğrudan bir SQL sorgusunda kullanır. Saldırgan, girdi içeriği oluşturabilir. Bu tür içerik genellikle kötü amaçlı (malicious payload) yük olarak adlandırılır. Saldırgan bu içeriği gönderdikten sonra, veritabanında kötü amaçlı SQL komutları yürütür.</p>
+
+<ul>
+  <li><strong>SQL Injection Atağı Nasıl Anlaşılır?</strong></li>
+</ul>
+
+<p>SQL injection saldırılarını tespit etmek için çeşitli stratejiler bulunmktadır. Bir veritabanı uygulamasının yayın adayı üzerinde gerçekleştirilen testler kümesine penetrasyon testi eklemek, tüm açık saldırı vektörlerinin iyi bir şekilde bağlanıp bağlanmadığını kontrol etmek ve veritabanının girişimleri algılayabilmesini sağlamak için giderek daha yaygın hale geldi. Bu, uygulamanızın ve veritabanınızın saldıra karşı direncini arttırır.</p>
+
+<ul>
+  <li>
+    <p><strong>SQL Injection atak tiplerinden bazıları;</strong></p>
+  </li>
+  <li>
+    <p>Ek sonuçlar döndürmek için bir SQL sorgusunu değiştirebileceğiniz gizli verileri çalma.</p>
+  </li>
+  <li>
+    <p>Uygulamanın mantığına müdahale etmek için bir sorguyu değiştirebileceğiniz uygulama mantığını tersine çevirme.</p>
+  </li>
+  <li>
+    <p>Farklı veritabanı tablolarından veri alabileceğiniz union saldırıları.</p>
+  </li>
+  <li>
+    <p>Veritabanının sürümü ve yapısı hakkında bilgi alabileceğiniz veritabanını incelemek.</p>
+  </li>
+  <li>
+    <p>Kör sql enjeksiyonu, kontrol ettiğiniz bir sorgunun sonuçlarının uygulamanın yanıtlarında döndürülmemesi.</p>
+  </li>
+  <li>
+    <p><strong>SQL Injection Saldırılarından Korunmak</strong></p>
+  </li>
+</ul>
+
+<p>Kullanıcı girdi(input) kanallarının bu tür saldırılar için ana vektör olduğu düşünüldüğünde, en iyi yaklaşım saldırı modellerini izlemek için kullanıcı girdilerini kontrol etmek ve incelemek. Sql enjeksiyonu önlemek için bazı yöntemler; Giriş doğrulama, parametreleştirilmiş sorgular, depolanmış prosedürler ve kaçış gibi önleme teknikleri, çeşitli saldırı vektörleriyle iyi çalışır. Bununla birlikte, SQL enjeksiyon saldırılarının modelindeki büyük farklılıklardan dolayı genelde veritabanlarını koruyamazlar. Bu nedenle, tüm temelleri kapsamak istiyorsanız, yukarıda belirtilen stratejileri güvenilir bir WAF (Web application firewall) ile uygulamalısınız. WAF’ın birincil avantajı, korumasız kalacak olan özel web uygulamaları için koruma sağlamasıdır.</p>
 </div>
 
                     <div id="page-navigation" class="page-navigation">
                         <div class="next col-xs-6">
                             
-                                <a href="/blog/Brute_force" title="Brute Force">&laquo; Brute Force</a>
-                            
                         </div>
                         <div class="previous col-xs-6 text-right">
                             
-                                <a href="/blog/call-for-papers2" title="selam">selam &raquo;</a>
+                                <a href="/blog/Zero-day_Exploit" title="Zero-day Exploit">Zero-day Exp... &raquo;</a>
                             
                         </div>
                     </div>
