@@ -75,8 +75,8 @@ rightNavigationButtons:
 
 # Hero Block
 heroImage: "hero.jpg"
-heroTitle: "TR7 <typeout> Since 2018"
-trHeroTitle: "TR7 <typeout> 2018'den Beri"
+heroTitle: "TR7 <typeout> Application Security Platform"
+trHeroTitle: "TR7 <typeout> Uygulama Güvenlik Platformu"
 eventDate: "TR7 Load Balancing and Application Security Platform"
 trEventDate: "TR7 Yük Dengeleme ve Uygulama Güvenlik Platformu"
 typeoutTextValues: '"", "Load Balancing", "Application Security", "WAF", "DDoS Protection"'
@@ -206,20 +206,25 @@ ticketsOffers:
 
 # Footer
 socialLinks:
- - {link: "https://plus.google.com/b/102444623953913144164", icon: "google-plus"}
- - {link: "https://twitter.com/intent/user?screen_name=GDGLviv", icon: "twitter"}
- - {link: "https://facebook.com/GDGLviv", icon: "facebook"}
- - {permalink: "/feed.xml", icon: "rss"}
+ - {link: "https://www.linkedin.com/company/tr7-siber-savunma-a-ş/?viewAsMember=true", icon: "linkedin"}
+ - {link: "https://twitter.com/siber_A", icon: "twitter"}
+ - {link: "https://www.instagram.com/tr7_cybersecurity", icon: "instagram"}
 footerBlocks:
  -
   title: "Links"
   links:
-   - {link: "http://gdg.org.ua", text: "GDG.org.ua"}
-   - {link: "https://developers.google.com", text: "Google Developers"}
+   - {link: "/tr/", text: "Anasayfa"}
+   - {link: "/tr/", text: "Online Demo"}
+   - {link: "/tr/", text: "Poc Talebi"}
+   - {link: "/tr/", text: "Siber Test"} 
  -
   title: "Contacts"
   links:
-   - {link: "mailto:lviv@gdg.org.ua", text: "lviv@gdg.org.ua"}
+   - {link: "mailto:lviv@gdg.org.ua", text: "İş Ortakları"}
+   - {link: "mailto:lviv@gdg.org.ua", text: "Blog"}
+   - {link: "mailto:lviv@gdg.org.ua", text: "Dokümanlar"}
+
+ 
  -
   title: "FAQ"
   links:
@@ -244,7 +249,7 @@ aboutUs: "As TR7 Cyber Security Inc., we set off to eliminate external dependenc
 
 # tr Team Block
 
-tr_teamBlockTitle: "Geçmişimiz & Geleceğimiz"
+tr_teamBlockTitle: "Geçmişimiz & Vizyonumuz"
 aboutUs1: " TR7 Siber Savunma A.Ş. olarak, Ülkemizin milli siber güvenlik konusunda gelişime ihtiyaç duyulan alanlarından biri olan yük dengeleme, uygulama dağıtım ve uygulama güvenliği konularında dışa bağımlılığı ortadan kaldırıp, oluşabilecek güvenlik açıklarını en aza indirmeyi hedefleyerek yola çıktık. Uluslararası savaşların silahlar yerine siber unsurlar ile gerçekleşeceği öngörüsüyle, Türkiye'nin ilk yerli ve milli Yük Dengeleme ve Web Uygulama Güvenlik Duvarı ürünü olan TRScaler ile 2008 yılında başlayan çalışmalarımız, TR7 Markası ile yüksek performanslı ve yenilikçi özelliklerin mevcut teknolojimize sürekli eklenmesi ile devam etmektedir. "
 
 # Logistics Find Way Block
