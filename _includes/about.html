@@ -1,8 +1,30 @@
 <!-- About Section -->
 <section id="about" class="about">
+    <style>
+     .changing::before {
+        content: 'Ease of Use';
+        animation: animate infinite 15s;
+     }   
+     @keyframes animate
+     {
+        0%
+        {
+            content: 'Ease of Use';
+        }
+        49%
+        {
+            content: 'High Scalability';
+        }
+        51%
+        {
+            content: 'Secure Web Applications';
+        }
+     }
+
+    </style>
     <div class="content-wrapper">
         <div class="col-lg-10 col-lg-offset-1">
-            <h3>{{ site.aboutTitle }}</h3>
+            <h3><span class="changing"> </span>{{ site.aboutTitle }}</h3>
             <div class="row about-details">
                 {% assign animationDelay = 0 %}
                 {% for about in site.aboutBlock %}

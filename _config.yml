@@ -45,8 +45,8 @@ c4sponsorsUrl: "/assets/GDG_DevFest_Partnership.pdf"
 # Navigation
 navigationLinks:
  - {permalink: "/", text: "Home"}
- - {permalink: "/solutions/", text: "Solutions & Products"}
  - {permalink: "/about/", text: "About"}
+ - {permalink: "/solutions/", text: "Solutions & Products"}
  - {permalink: "/blog/", text: "Blog"}
  - {permalink: "/documentation/", text: "Documentation"}
  - {permalink: "/references/", text: "References"}
@@ -58,8 +58,8 @@ navigationLinks:
 # TR Navigation
 tr_navigationLinks:
  - {permalink: "/tr/", text: "Anasayfa"}
- - {permalink: "/tr/cozumler/", text: "Çözümler & Ürünler"}
  - {permalink: "/tr/hakkimizda/", text: "Hakkımızda"}
+ - {permalink: "/tr/cozumler/", text: "Çözümler & Ürünler"}
  - {permalink: "/tr/blog/", text: "Blog"}
  - {permalink: "/tr/dokumantasyon/", text: "Dokümantasyon"}
  - {permalink: "/tr/referanslar/", text: "Referanslar"}
@@ -74,10 +74,10 @@ rightNavigationButtons:
  - {link: "https://bit.ly/dfua-c4p", text: "Become a speaker"}
 
 # Hero Block
-heroImage: "hero.jpg"
+heroImage: "bg_image.jpg"
 heroTitle: "TR7 <typeout> Application Security Platform"
 trHeroTitle: "TR7 <typeout> Uygulama Güvenlik Platformu"
-eventDate: "TR7 Load Balancing and Application Security Platform"
+eventDate: "TR7 Load Balancing and Web Application Firewall"
 trEventDate: "TR7 Yük Dengeleme ve Uygulama Güvenlik Platformu"
 typeoutTextValues: '"", "Load Balancing", "Application Security", "WAF", "DDoS Protection"'
 trTypeoutTextValues: '"", "Yük Dengeleme", "Uygulama Güvenliği", "WAF", "DDoS Koruması"'
@@ -90,11 +90,11 @@ trHeroButtons:
  - {permalink: "/#tickets", text: "Çözümlerimiz"}
 
 # About Block
-aboutTitle: "Secure Web Applications With TR7"
+aboutTitle: "With TR7"
 aboutBlock:
  - {title: "Plug-and-Play", image: "plug.jpg", text: "TR7 is designed for companies that want a high-performance, uninterrupted plug-and-play system to balance application flows and guarantee the highest availability of critical application platforms / servers." }
- - {title: "Reasonable Price", image: "money.jpg", text: "TR7 TASP, Open source components are optimized and used with reliable hardware platforms, provides business partners with advantageous prices at more competitive prices compared to other LB manufacturers." }
- - {title: "Scalable", image: "scale.jpg", text: "With different boxes, it is adapted to every need with parallel operating modes (active-passive / active-active / passive-passive) depending on the processing power, infrastructure needs and critical level." }
+ - {title: "Cost Effective", image: "money.jpg", text: "TR7 ASP, Open source components are optimized and used with reliable hardware platforms, provides business partners with advantageous prices at more competitive prices compared to other LB manufacturers." }
+ - {title: "High Scalable", image: "scale.jpg", text: "With different boxes, it is adapted to every need with parallel operating modes (active-passive / active-active / passive-passive) depending on the processing power, infrastructure needs and critical level." }
 
 # tr_About Block
 tr_aboutTitle: "TR7 ile Güvenli Web Uygulamaları"
